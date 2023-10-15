@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "TwitchPointsAutoCollector",
+  "version": "1.0",
+  "description": "Collects Twitchs points automatically when the collection button is visible and clickable",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitch.tv/*"],
+      "js": ["content-script.js"],
+      "exclude_matches": [
+        "https://www.twitch.tv/directory/*"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs"
+  ]
+}
