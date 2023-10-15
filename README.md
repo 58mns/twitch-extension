@@ -6,7 +6,7 @@ An extension to automatically collect the Twitch Channel Points during a Twitch 
 
 # Tools
 
-The scripts is written in JavaScript and uses a MutationObserver to manipulate the DOM.
+The script is written in JavaScript and uses a MutationObserver to manipulate the DOM.
 
 # Usage
 
